@@ -3,7 +3,7 @@
 //  FreakingApp01
 //
 //  Created by Matthis Drolet on 13/04/2017.
-//  Copyright © 2017 Matthis Drolet. All rights reserved.
+//  Copyright © 2017 Matthis Drolet. All rights reserved..
 //
 
 import UIKit
