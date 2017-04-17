@@ -12,6 +12,22 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text01: UITextField!
+    
+    @IBOutlet weak var text02: UITextField!
+    
+    @IBOutlet weak var calcButton: UIButton!
+    
+    @IBAction func calcButton(_ sender: Any) {
+        
+        print(text01)
+        print(text01.text!)
+        print(text02.text!)
+        
+    }
+    
+    
+    
     var tapButtonCount = 0
     var tapChangeCount = 0
     

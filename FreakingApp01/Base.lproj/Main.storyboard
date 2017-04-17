@@ -22,20 +22,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgS-am-KRh">
-                                <rect key="frame" x="143" y="70" width="89" height="21"/>
+                                <rect key="frame" x="143" y="70" width="89" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P32-dn-D33">
-                                <rect key="frame" x="155.5" y="111" width="64" height="30"/>
+                                <rect key="frame" x="155.5" y="110.5" width="64" height="30"/>
                                 <state key="normal" title="Push Me!"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LE6-FK-8jB"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Yh-lQ-Mwr">
+                                <rect key="frame" x="137.5" y="233.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MJT-re-ZxM"/>
+                                    <constraint firstAttribute="width" constant="100" id="tbu-WG-Mwk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9x-9h-dbQ">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0ZH-Qb-TA6"/>
+                                    <constraint firstAttribute="height" constant="30" id="DKY-cy-lEA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gH-vj-VA1">
+                                <rect key="frame" x="170" y="343.5" width="35" height="30"/>
+                                <state key="normal" title="Calc!"/>
+                                <connections>
+                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEe-CJ-itp"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJy-3V-J4v">
-                                <rect key="frame" x="140" y="199" width="95" height="30"/>
+                                <rect key="frame" x="140" y="153.5" width="95" height="30"/>
                                 <state key="normal" title="Change Label"/>
                                 <connections>
                                     <action selector="changeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6F-Ps-F8p"/>
@@ -47,12 +74,21 @@
                             <constraint firstItem="kJy-3V-J4v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6F9-w7-b0a"/>
                             <constraint firstItem="GgS-am-KRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Qs-tU-GRm"/>
                             <constraint firstItem="P32-dn-D33" firstAttribute="top" secondItem="GgS-am-KRh" secondAttribute="bottom" constant="20" id="Fzv-Le-HLO"/>
+                            <constraint firstItem="4gH-vj-VA1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULi-YD-w2d"/>
+                            <constraint firstItem="a9x-9h-dbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YAA-FU-Kfl"/>
+                            <constraint firstItem="a9x-9h-dbQ" firstAttribute="top" secondItem="7Yh-lQ-Mwr" secondAttribute="bottom" constant="20" id="cdw-WM-zR7"/>
+                            <constraint firstItem="7Yh-lQ-Mwr" firstAttribute="top" secondItem="kJy-3V-J4v" secondAttribute="bottom" constant="50" id="djU-HN-aHg"/>
+                            <constraint firstItem="7Yh-lQ-Mwr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dlR-WV-NbP"/>
+                            <constraint firstItem="4gH-vj-VA1" firstAttribute="top" secondItem="a9x-9h-dbQ" secondAttribute="bottom" constant="30" id="fGR-aU-cqc"/>
                             <constraint firstItem="GgS-am-KRh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="jdE-qf-MJf"/>
                             <constraint firstItem="P32-dn-D33" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnk-Bq-34Q"/>
-                            <constraint firstItem="kJy-3V-J4v" firstAttribute="top" secondItem="P32-dn-D33" secondAttribute="bottom" constant="58" id="n9v-vP-bHK"/>
+                            <constraint firstItem="kJy-3V-J4v" firstAttribute="top" secondItem="P32-dn-D33" secondAttribute="bottom" constant="13" id="n9v-vP-bHK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calcButton" destination="4gH-vj-VA1" id="ktE-Ox-aYL"/>
+                        <outlet property="text01" destination="7Yh-lQ-Mwr" id="KEz-6i-GOi"/>
+                        <outlet property="text02" destination="a9x-9h-dbQ" id="HPQ-jD-Etd"/>
                         <outlet property="theLabel" destination="GgS-am-KRh" id="C0O-eg-fGM"/>
                     </connections>
                 </viewController>
