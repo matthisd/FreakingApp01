@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         print(text01.text!)
         print(text02.text!)
         
+        theLabel.text = String(Double(text01.text!)! + Double(text02.text!)!)
     }
     
     
